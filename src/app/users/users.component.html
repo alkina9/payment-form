@@ -1,0 +1,37 @@
+<div class="container pt-2">
+  <div class="row">
+    <div class="col-12">
+      <h3>Пользователи</h3>
+      <div class="row " *ngFor="let item of users">
+        <div class="col-6 card bg-light">
+          <strong class="pt-2 username">{{item.name}}</strong>
+        </div>
+
+        <div class="col-6 card bg-light">
+          <div class="row" *ngFor="let service of item.services">
+            <div class="col-6 pt-2">
+              <span class="text-muted">{{service.product}}</span>
+            </div>
+            <div class="col-6 pt-2 text-center">
+              <strong>{{service.price}} &#8381;
+              </strong>
+            </div>
+            <div class="ml-2 mt-2">
+              <div *ngIf="service.result>0" class="alert alert-success" role="alert">
+                {{service.result}} &#8381;
+              </div>
+              <div *ngIf="service.result<0" class="alert alert-danger" role="alert">
+                {{service.result}} &#8381;
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <button type="button" class="btn btn-dark mt-1 mb-4" [routerLink]="['/form/' +item.id]">Перейти к оплате
+        </button>
+
+      </div>
+    </div>
+  </div>
+</div>

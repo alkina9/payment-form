@@ -1,0 +1,25 @@
+.success {
+    color: green;
+}
+
+.warn {
+    color: red;
+}
+
+.input-form {
+    display: flex;
+flex-direction: column;
+}
+
+.input-form > * {
+  width: 100%;
+}
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+
+.radio-button {
+  margin: 5px;
+}

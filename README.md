@@ -8,4 +8,4 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 # DEMO
 
-https://ru.000webhost.com/members/website/iop-yo/files
+https://iop-yo.000webhostapp.com
